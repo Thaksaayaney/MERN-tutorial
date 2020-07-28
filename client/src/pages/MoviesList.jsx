@@ -3,11 +3,11 @@ import ReactTable from "react-table";
 import api from "../api";
 
 import styled from "styled-components";
+import 'react-table/react-table.css'
 
 const Wrapper = styled.div`
   padding: 0 40px 40px 40px;
 `;
-
 class MoviesList extends Component {
   constructor(props) {
     super(props);
@@ -61,8 +61,7 @@ class MoviesList extends Component {
       showTable = false;
     }
 
-    console.log(movies, columns, isLoading);
-    console.log(ReactTable);
+
     return (
       <Wrapper>
         {showTable && (
